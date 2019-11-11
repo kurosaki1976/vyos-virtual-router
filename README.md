@@ -42,7 +42,7 @@ set interfaces ethernet eth0 vif 'VLAN_ID' description 'LAN'
 
 * Parámetros de enrutamiento
 
-  - Para versiones `<=1.1.8`
+  - Para versiones <=1.1.8
 
   ```bash
   set system gateway-address 'ISP_WAN_ADDRESS'
@@ -52,43 +52,45 @@ set interfaces ethernet eth0 vif 'VLAN_ID' description 'LAN'
   set protocols static route 0.0.0.0/0 next-hop 'ISP_WAN_ADDRESS'
   ```
 
-  - Para versiones `=>1.1.8`
+  - Para versiones =>1.1.8
 
   ```bash
   set protocols static route 0.0.0.0/0 next-hop 'ISP_WAN_ADDRESS'
   ```
 
-* Parámetros de acceso a través del protocolo `SSH`
-
-```bash
-set service ssh listen-address 'LAN_ADDRESS'
-set service ssh port '22'
-```
-
-* Parámetros de cortafuegos
-
-```bash
-set firewall all-ping enable
-set firewall broadcast-ping disable
-set firewall config-trap disable
-set firewall name OutSide
-set firewall name OutSide default-action accept
-set firewall name OutSide rule 1 action drop
-set firewall name OutSide rule 1 destination port 'ssh'
-set firewall name OutSide rule 1 protocol 'tcp'
-set firewall name OutSide rule 2 action drop
-set firewall name OutSide rule 2 destination port 'telnet'
-set firewall name OutSide rule 2 protocol 'tcp'
-set interface ethernet eth0 vif 'VLAN_ID' firewall local name OutSide
-```
-
 * Parámetros de seguridad
 
-```bash
-set system login user USERNAME full-name 'Descripción del usuario'
-set system login user USERNAME authentication plaintext-password 'PASSWORD'
-set system login user USERNAME level 'admin'
-```
+  - Reglas de cortafuegos
+
+  ```bash
+  set firewall all-ping enable
+  set firewall broadcast-ping disable
+  set firewall config-trap disable
+  set firewall name OutSide
+  set firewall name OutSide default-action accept
+  set firewall name OutSide rule 1 action drop
+  set firewall name OutSide rule 1 destination port 'ssh'
+  set firewall name OutSide rule 1 protocol 'tcp'
+  set firewall name OutSide rule 2 action drop
+  set firewall name OutSide rule 2 destination port 'telnet'
+  set firewall name OutSide rule 2 protocol 'tcp'
+  set interface ethernet eth0 vif 'VLAN_ID' firewall local name OutSide
+  ```
+
+  - Definir un usuario distinto al por defecto
+
+  ```bash
+  set system login user USERNAME full-name 'Descripción del usuario'
+  set system login user USERNAME authentication plaintext-password 'PASSWORD'
+  set system login user USERNAME level 'admin'
+  ```
+
+  - Permitir acceso a través del protocolo `SSH`
+
+  ```bash
+  set service ssh listen-address 'LAN_ADDRESS'
+  set service ssh port '22'
+  ```
 
 Aplicar la configuración, guardar los cambios para hacerlos permanentes en cada reinicio, y salir del modo de configuración.
 
