@@ -101,6 +101,9 @@ exit
 
 > **NOTA**: Si se desea conocer todos los comandos de configuración establecidos, se debe ejecutar en el modo operacional, `show configuration commands`.
 
+## Conclusiones
+
 ## Referencias
 
+* [Welcome to the VyOS project, a Linux-based network operating system](https://wiki.vyos.net/wiki/Main_Page)
 * [User Guide](https://wiki.vyos.net/wiki/User_Guide)
