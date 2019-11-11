@@ -40,7 +40,7 @@ set interfaces ethernet eth0 vif 'VLAN_ID' description 'LAN'
 
 * Parámetros de enrutamiento
 
-- Para versiones <=1.1.8
+** Para versiones <=1.1.8
 
 ```bash
 set system gateway-address 'ISP_WAN_ADDRESS'
@@ -50,7 +50,7 @@ set system gateway-address 'ISP_WAN_ADDRESS'
 set protocols static route 0.0.0.0/0 next-hop 'ISP_WAN_ADDRESS'
 ```
 
-- Para servsiones =>1.1.8
+** Para servsiones =>1.1.8
 
 ```bash
 set protocols static route 0.0.0.0/0 next-hop 'ISP_WAN_ADDRESS'
