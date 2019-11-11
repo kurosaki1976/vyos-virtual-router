@@ -79,3 +79,9 @@ Aplicar la configuración, guardar los cambios para hacerlos permanentes en cada
 commit && save
 exit
 ```
+
+> **NOTA**: Si se desea conocer todos los parámetros de configuración establecidos, se debe ejecutar en el modo de operación el comando `show configuration commands`.
+
+## Referencias
+
+* [User Guide](https://wiki.vyos.net/wiki/User_Guide)
