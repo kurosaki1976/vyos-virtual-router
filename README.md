@@ -12,7 +12,7 @@ install image
 
 ## Configuración
 
-Acceder al modo de configuración a través del comando `configure`'.
+Acceder al modo de configuración a través del comando `configure`.
 
 * Parámetros globales
 
@@ -28,10 +28,10 @@ set system ntp server 'NTP_SEVER_ADDRESS'
 * Parámetros de interfaces de red
 
 ```bash
-set interfaces ethernet eth0 vif VID address 'WAN_ADDRESS/CIDR'
-set interfaces ethernet eth0 vif VID description 'WAN'
-set interfaces ethernet eth0 vif VID address 'LAN_ADDRESS/CIDR'
-set interfaces ethernet eth0 vif VID description 'LAN'
+set interfaces ethernet eth0 vif 'VLAN_ID' address 'WAN_ADDRESS/CIDR'
+set interfaces ethernet eth0 vif 'VLAN_ID' description 'WAN'
+set interfaces ethernet eth0 vif 'VLAN_ID' address 'LAN_ADDRESS/CIDR'
+set interfaces ethernet eth0 vif 'VLAN_ID' description 'LAN'
 ```
 
 * Parámetros de enrutamiento
@@ -62,7 +62,7 @@ set firewall name OutSide rule 1 protocol 'tcp'
 set firewall name OutSide rule 2 action drop
 set firewall name OutSide rule 2 destination port 'telnet'
 set firewall name OutSide rule 2 protocol 'tcp'
-set interface ethernet eth0 vif VID firewall local name OutSide
+set interface ethernet eth0 vif 'VLAN_ID' firewall local name OutSide
 ```
 
 * Parámetros de seguridad
