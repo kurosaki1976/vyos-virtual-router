@@ -6,7 +6,9 @@
 
 ## Introducción
 
-`VyOS` es un sistema operativo de red de código abierto basado en `Debian GNU/Linux`. Proporciona una plataforma de enrutamiento gratuita que compite directamente con otras soluciones disponibles en el mercado de proveedores de red, como `Huawei` y `Cisco`, entre los más conocidos. Provee, entre otras, las funcionalidades de enrutamiento, cortafuegos, `VPN` y `VLAN`. 
+`VyOS` es un sistema operativo de red de código abierto basado en `Debian GNU/Linux`. Proporciona una plataforma de enrutamiento gratuita que compite directamente con otras soluciones disponibles en el mercado de proveedores de red, como `Huawei` y `Cisco`, entre los más conocidos. Provee, entre otras, las funcionalidades de enrutamiento, cortafuegos, `VPN` y `VLAN`.
+
+## Escenario
 
 ## Instalación
 
@@ -40,7 +42,7 @@ set interfaces ethernet eth0 vif 'VLAN_ID' description 'LAN'
 
 * Parámetros de enrutamiento
 
-  * Para versiones <=1.1.8
+  - Para versiones <=1.1.8
 
   ```bash
   set system gateway-address 'ISP_WAN_ADDRESS'
@@ -50,7 +52,7 @@ set interfaces ethernet eth0 vif 'VLAN_ID' description 'LAN'
   set protocols static route 0.0.0.0/0 next-hop 'ISP_WAN_ADDRESS'
   ```
 
-  * Para servsiones =>1.1.8
+  - Para servsiones =>1.1.8
 
   ```bash
   set protocols static route 0.0.0.0/0 next-hop 'ISP_WAN_ADDRESS'
@@ -83,7 +85,7 @@ set interface ethernet eth0 vif 'VLAN_ID' firewall local name OutSide
 * Parámetros de seguridad
 
 ```bash
-set system login user USERNAME full-name 'User Full Name'
+set system login user USERNAME full-name 'Descripción del usuario'
 set system login user USERNAME authentication plaintext-password 'PASSWORD'
 set system login user USERNAME level 'admin'
 ```
@@ -95,7 +97,7 @@ commit && save
 exit
 ```
 
-> **NOTA**: Si se desea conocer todos los parámetros de configuración establecidos, se debe ejecutar en el modo de operación el comando `show configuration commands`.
+> **NOTA**: Si se desea conocer todos los parámetros de configuración establecidos, se debe ejecutar en el modo operacional, `show configuration commands`.
 
 ## Referencias
 
