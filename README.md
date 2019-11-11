@@ -106,4 +106,6 @@ exit
 ## Referencias
 
 * [Welcome to the VyOS project, a Linux-based network operating system](https://wiki.vyos.net/wiki/Main_Page)
-* [User Guide](https://wiki.vyos.net/wiki/User_Guide)
+* [VyOS User Guide](https://wiki.vyos.net/wiki/User_Guide)
+* [VyOS Readthedocs](https://vyos.readthedocs.io/en/latest/)
+* [VyOS KB](https://support.vyos.io/en/kb)
