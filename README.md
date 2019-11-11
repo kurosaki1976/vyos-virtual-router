@@ -109,6 +109,8 @@ show configuration
 
 ## Conclusiones
 
+La virtualización representa una de las tecnologías más eficientes para reducir los costos de infraestructura de TI. Esto es porque la virtualización puede ser aplicada tanto a servidores como a redes. Además, también genera mayor eficiencia, agilidad y autonomía para la empresa cliente, con una inversión que no rebasa los presupuestos predefinidos.
+
 ## Referencias
 
 * [Welcome to the VyOS project, a Linux-based network operating system](https://wiki.vyos.net/wiki/Main_Page)
