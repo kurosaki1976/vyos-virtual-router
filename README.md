@@ -97,7 +97,7 @@ commit && save
 exit
 ```
 
-> **NOTA**: Si se desea conocer todos los parámetros de configuración establecidos, se debe ejecutar en el modo operacional, `show configuration commands`.
+> **NOTA**: Si se desea conocer todos los comandos de configuración establecidos, se debe ejecutar en el modo operacional, `show configuration commands`.
 
 ## Referencias
 
