@@ -14,7 +14,7 @@
 
 El proceso de instalación de `VyOS` es en extremo sencillo, basta con ejecutar el comando `install image` y aceptar (**recomendado**) o modificar las opciones que nos presenta el asistente; al concluir, reiniciar.
 
-Una vez instalado `VyOS` dispone de dos modos de gestión, el modo operacional y el modo de configuración.
+Una vez instalado `VyOS` dispone de dos modos de gestión, el modo operacional y el modo de configuración. En el primero es donde se ejecutan todos los comandos de verificación y monitoreo, y en el segundo, como su propio nombre indica; los comandos de configuración.
 
 ## Configuración
 
@@ -26,7 +26,7 @@ Acceder al modo de configuración a través del comando `configure`.
 set system host-name 'HOSTNAME'
 set system name-server 'ISP_NAME_SERVER'
 set system time-zone 'America/Havana'
-set system ntp server 'NTP_SEVER_ADDRESS'
+set system ntp server 'NTP_SERVER_ADDRESS'
 ```
 
 > **NOTA**: Si se utiliza versiones igual o inferior a la `1.1.8`, es recomendable ejecutar `delete system console device ttyS0`.
