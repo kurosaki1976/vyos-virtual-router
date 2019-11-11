@@ -12,9 +12,9 @@
 
 ## Instalación
 
-```bash
-install image
-```
+El proceso de instalación de `VyOS` es en extremo sencillo, basta con ejecutar el comando `install image` y aceptar (**recomendado**) o modificar las opciones que nos presenta el asistente; al concluir, reiniciar.
+
+Una vez instalado `VyOS` dispone de dos modos de gestión, el modo operacional y el modo de configuración.
 
 ## Configuración
 
