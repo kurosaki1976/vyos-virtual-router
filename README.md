@@ -29,7 +29,7 @@ set system time-zone 'America/Havana'
 set system ntp server 'NTP_SEVER_ADDRESS'
 ```
 
-> **NOTA**: Si se está utilizando la versión 1.1.8 es recomendable ejecutar `delete system console device ttyS0`.
+> **NOTA**: Si se utiliza versiones igual o inferior a la `1.1.8`, es recomendable ejecutar `delete system console device ttyS0`.
 
 * Parámetros de interfaces de red
 
@@ -42,7 +42,7 @@ set interfaces ethernet eth0 vif 'VLAN_ID' description 'LAN'
 
 * Parámetros de enrutamiento
 
-  - Para versiones <=1.1.8
+  - Para versiones `<=1.1.8`
 
   ```bash
   set system gateway-address 'ISP_WAN_ADDRESS'
@@ -52,7 +52,7 @@ set interfaces ethernet eth0 vif 'VLAN_ID' description 'LAN'
   set protocols static route 0.0.0.0/0 next-hop 'ISP_WAN_ADDRESS'
   ```
 
-  - Para servsiones =>1.1.8
+  - Para versiones `=>1.1.8`
 
   ```bash
   set protocols static route 0.0.0.0/0 next-hop 'ISP_WAN_ADDRESS'
