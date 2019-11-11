@@ -4,6 +4,10 @@
 
 - [Ixen Rodríguez Pérez - kurosaki1976](ixenrp1976@gmail.com)
 
+## Introducción
+
+`VyOS` es un sistema operativo de red de código abierto basado en Debian GNU/Linux. `VyOS` proporciona una plataforma de enrutamiento gratuita que compite directamente con otras soluciones disponibles en el mercado de proveedores de red conocidos. Provee, entre otras, las funcionalidades de enrutamiento, cortafuegos, VPN y VLAN. 
+
 ## Instalación
 
 ```bash
