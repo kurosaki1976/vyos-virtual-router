@@ -21,10 +21,11 @@ set system host-name 'HOSTNAME'
 set system name-server 'ISP_NAME_SERVER'
 set system time-zone 'America/Havana'
 set system ntp server 'NTP_SEVER_ADDRESS'
-delete system console device ttyS0
 ```
 
-* Parámetros globales
+> **NOTA**: Si se está utilizando la versión 1.1.8 es recomendable ejecutar `delete system console device ttyS0`.
+
+* Parámetros de interfaces de red
 
 ```bash
 set interfaces ethernet eth0 vif VID address 'WAN_ADDRESS/CIDR'
