@@ -109,7 +109,7 @@ show configuration
 
 ## Conclusiones
 
-La virtualización representa una de las tecnologías más eficientes para reducir los costos de infraestructura de TI. Esto es porque la virtualización puede ser aplicada tanto a servidores como a redes. Además, también genera mayor eficiencia, agilidad y autonomía para la empresa cliente, con una inversión que no rebasa los presupuestos predefinidos.
+La virtualización representa una de las tecnologías más eficientes para reducir los costos de infraestructura de informática y telecomunicaciones. Esto es porque la virtualización puede ser aplicada tanto a servidores como a redes. Además, también genera mayor eficiencia, agilidad y autonomía para la empresa cliente, con una inversión que no rebasa los presupuestos predefinidos.
 
 ## Referencias
 
