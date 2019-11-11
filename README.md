@@ -12,7 +12,7 @@ install image
 
 ## Configuración
 
-La configuración se realiza a través del comando `configure`'.
+Acceder al modo de configuración a través del comando `configure`'.
 
 * Parámetros globales
 
@@ -73,7 +73,7 @@ set system login user USERNAME authentication plaintext-password 'PASSWORD'
 set system login user USERNAME level 'admin'
 ```
 
-Aplicar la configuración y guardarlos para hacerlos permanentes en cada reinicio.
+Aplicar la configuración, guardar los cambios para hacerlos permanentes en cada reinicio, y salir del modo de configuración.
 
 ```bash
 commit && save
