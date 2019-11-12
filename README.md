@@ -17,14 +17,14 @@ En Cuba la adopción de las tecnologías de virtualización van ganando cada vez
 * Requisitos de `hardware` y `software`
 
   - Hardware
-    CPU: 1 core
-    RAM: 512Mb
-    HDD: 2Gb
-    Arquitectura: i586 ó amd64
-    Adaptador de red: 2 (solo 1, de utilizarse `VLAN` bajo protocolo de etiquetado `IEEE 802.1Q`)
+    1. CPU: 1 core
+    2. RAM: 512Mb
+    3. HDD: 2Gb
+    4. Arquitectura: i586 ó amd64
+    5. Adaptador de red: 2 (solo 1, de utilizarse `VLAN` bajo protocolo de etiquetado `IEEE 802.1Q`)
 
   - Software
-    Imagen `ISO` de `VyOS` para la arquitectura seleccionada, disponibles en ...
+    1. Imagen `ISO` de `VyOS` para la arquitectura seleccionada, disponibles en [VyOS Downloads](https://downloads.vyos.io/).
 
 El proceso de instalación de `VyOS` es en extremo sencillo, basta con ejecutar el comando `install image` y aceptar (**recomendado**) o modificar las opciones que nos presenta el asistente; al concluir, reiniciar.
 
