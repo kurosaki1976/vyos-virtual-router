@@ -63,10 +63,10 @@ set system time-zone 'America/Havana'
   - Utilizando protocolo de etiquetado `IEEE 802.1Q`
 
   ```bash
-  set interfaces ethernet eth0 vif 'VLAN_ID' address '192.168.30.2/30'
-  set interfaces ethernet eth0 vif 'VLAN_ID' description 'WAN'
-  set interfaces ethernet eth0 vif 'VLAN_ID' address '200.55.143.153/29'
-  set interfaces ethernet eth0 vif 'VLAN_ID' description 'LAN'
+  set interfaces ethernet eth0 vif '100' address '192.168.30.2/30'
+  set interfaces ethernet eth0 vif '100' description 'WAN'
+  set interfaces ethernet eth0 vif '101' address '200.55.143.153/29'
+  set interfaces ethernet eth0 vif '101' description 'LAN'
   ```
 
 * Parámetros de enrutamiento
@@ -113,8 +113,10 @@ set system time-zone 'America/Havana'
     - Utilizando protocolo de etiquetado `IEEE 802.1Q`
 
     ```bash
-    set interface ethernet eth0 vif 'VLAN_ID' firewall local name OutSide
+    set interface ethernet eth0 vif '100' firewall local name OutSide
     ```
+
+    > **NOTA**: La aplicación de esta política de cortafuegos, evita que el `router` sea gestionado a través de la interfaz `WAN`.
 
   - Definir un usuario distinto al por defecto
 
