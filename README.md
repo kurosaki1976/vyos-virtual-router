@@ -120,7 +120,7 @@ set system time-zone 'America/Havana'
 
   ```bash
   set system login user 'username' full-name 'Descripción del usuario'
-  set system login user 'username' authentication plaintext-password 'PASSWORD'
+  set system login user 'username' authentication plaintext-password 'P@s$w0rd.2019'
   set system login user 'username' level 'admin'
   ```
 
