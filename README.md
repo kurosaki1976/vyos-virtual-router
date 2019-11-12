@@ -20,7 +20,7 @@ A los efectos de esta guía, se utilizará un entorno de virtualización basado 
   - **HDD**: 2 GiB
   - **Arquitectura**: i586 ó amd64
   - **Adaptador de red**: 2 (solo 1, de utilizarse `VLAN` bajo protocolo de etiquetado `IEEE 802.1Q`)
-  
+
   > **NOTA**: Si se despliegan `VLAN` bajo protocolo de etiquetado `IEEE 802.1Q`, debe disponerse de un `switch L2`, donde se crearán las mismas `VLAN` que utilizará el `VyOS router`.
 
 2. Software
@@ -36,34 +36,36 @@ Una vez instalado, `VyOS` dispone de dos modos de gestión; el modo operacional 
 
 Acceder al modo de configuración a través del comando `configure`.
 
+> **NOTA**: Si se utiliza versiones igual o inferior a la `1.1.8`, es recomendable ejecutar `delete system console device ttyS0`.
+
 * Parámetros globales
 
 ```bash
-set system host-name 'HOSTNAME'
-set system name-server 'ISP_NAME_SERVER'
+set system host-name 'router'
+set system name-server 'ns1.etecsa.cu'
+set system name-server 'ns2.etecsa.cu'
 set system time-zone 'America/Havana'
-set system ntp server 'NTP_SERVER_ADDRESS'
 ```
 
-> **NOTA**: Si se utiliza versiones igual o inferior a la `1.1.8`, es recomendable ejecutar `delete system console device ttyS0`.
+> **NOTA**: Si su `ISP` cuenta con un servidor de hora, ejecutar `set system ntp server 'IP_O_FQDN_SERVIDOR_HORA'`.
 
 * Parámetros de los adaptadores de red
 
   - Sin utilizar protocolo de etiquetado `IEEE 802.1Q`
 
   ```bash
-  set interfaces ethernet eth0 address 'WAN_ADDRESS/CIDR'
+  set interfaces ethernet eth0 address '192.168.30.2/30'
   set interfaces ethernet eth0 description 'WAN'
-  set interfaces ethernet eth1 address 'LAN_ADDRESS/CIDR'
+  set interfaces ethernet eth1 address '200.55.143.153/29'
   set interfaces ethernet eth1 description 'LAN'
   ```
 
   - Utilizando protocolo de etiquetado `IEEE 802.1Q`
 
   ```bash
-  set interfaces ethernet eth0 vif 'VLAN_ID' address 'WAN_ADDRESS/CIDR'
+  set interfaces ethernet eth0 vif 'VLAN_ID' address '192.168.30.2/30'
   set interfaces ethernet eth0 vif 'VLAN_ID' description 'WAN'
-  set interfaces ethernet eth0 vif 'VLAN_ID' address 'LAN_ADDRESS/CIDR'
+  set interfaces ethernet eth0 vif 'VLAN_ID' address '200.55.143.153/29'
   set interfaces ethernet eth0 vif 'VLAN_ID' description 'LAN'
   ```
 
@@ -72,17 +74,17 @@ set system ntp server 'NTP_SERVER_ADDRESS'
   - Para versiones <=1.1.8
 
   ```bash
-  set system gateway-address 'ISP_WAN_ADDRESS'
+  set system gateway-address '192.168.30.1'
   ```
   ó
   ```bash
-  set protocols static route 0.0.0.0/0 next-hop 'ISP_WAN_ADDRESS'
+  set protocols static route 0.0.0.0/0 next-hop '192.168.30.1'
   ```
 
   - Para versiones =>1.1.8
 
   ```bash
-  set protocols static route 0.0.0.0/0 next-hop 'ISP_WAN_ADDRESS'
+  set protocols static route 0.0.0.0/0 next-hop '192.168.30.1'
   ```
 
 * Parámetros de seguridad
@@ -125,7 +127,7 @@ set system ntp server 'NTP_SERVER_ADDRESS'
   - Permitir acceso a través del protocolo `SSH`
 
   ```bash
-  set service ssh listen-address 'LAN_ADDRESS'
+  set service ssh listen-address '200.55.143.153'
   set service ssh port '22'
   ```
 
