@@ -6,25 +6,25 @@
 
 ## Introducción
 
-`VyOS` es un sistema operativo de red de código abierto basado en `Debian GNU/Linux`. Proporciona una plataforma de enrutamiento gratuita que compite directamente con otras soluciones disponibles en el mercado de proveedores de red, como `Huawei` y `Cisco`, entre los más conocidos. Provee, entre otras, las funcionalidades de enrutamiento, cortafuegos, `VPN` y `VLAN`. Para su gestión, `VyOS` provee una interfaz de línea de comandos (`CLI` por sus siglas en Inglés), al más puro estilo tradicional de configuración de `routers`.
+`VyOS` es un sistema operativo de red de código abierto basado en `Debian GNU/Linux`. Proporciona una plataforma de enrutamiento gratuita que compite directamente con otras soluciones disponibles en el mercado de proveedores de red, como `Huawei` y `Cisco`, entre los más conocidos. Provee, entre otras, las funcionalidades de enrutamiento, cortafuegos, `VPN` y `VLAN`. Para su gestión, `VyOS` provee una interfaz de línea de comandos (`CLI` por sus siglas en Inglés), al más puro estilo tradicional de configuración de `routers`. 
 
 ## Escenario
 
-En Cuba la adopción de las tecnologías de virtualización van ganando cada vez más adeptos, al mismo tiempo, va siendo común en las redes cubanas la existencia de conexión por fibra óptica -jaque mate al cobre y las tecnologías de conexión `DSL`-; ello presupone el despliegue de avanzadas tecnologías de red, como `router` y `switch L2/L3`; las cuales en no pocas ocasiones, están subutilizadas.
+En Cuba la adopción de las tecnologías de virtualización van ganando cada vez más adeptos; al mismo tiempo, va siendo común en las redes cubanas la existencia de conexión por fibra óptica -jaque mate al cobre y las tecnologías de conexión `DSL`-; lo que presupone el despliegue de electrónica avanzada de red, como `routers` y `switches L2/L3`; las cuales en no pocas ocasiones, están subutilizadas.
+
+A los efectos de esta guía, se utilizará un entorno de virtualización basado en `Proxmox`, donde se creará una máquina virtual ejecutando un `VyOS router` con los siguientes requisitos de `hardware` y `software`.
+
+1. Hardware
+  - **CPU**: 1 core
+  - **RAM**: 512 MiB
+  - **HDD**: 2 GiB
+  - **Arquitectura**: i586 ó amd64
+  - **Adaptador de red**: 2 (solo 1, de utilizarse `VLAN` bajo protocolo de etiquetado `IEEE 802.1Q`)
+
+2. Software
+  - Imagen `ISO` de `VyOS` para la arquitectura seleccionada, disponibles en [VyOS Downloads](https://downloads.vyos.io/).
 
 ## Instalación
-
-* Requisitos de `hardware` y `software`
-
-  - Hardware
-    1. **CPU**: 1 core
-    2. **RAM**: 512 MiB
-    3. **HDD**: 2 GiB
-    4. **Arquitectura**: i586 ó amd64
-    5. **Adaptador de red**: 2 (solo 1, de utilizarse `VLAN` bajo protocolo de etiquetado `IEEE 802.1Q`)
-
-  - Software
-    1. Imagen `ISO` de `VyOS` para la arquitectura seleccionada, disponibles en [VyOS Downloads](https://downloads.vyos.io/).
 
 El proceso de instalación de `VyOS` es en extremo sencillo, basta con ejecutar el comando `install image` y aceptar (**recomendado**) o modificar las opciones que nos presenta el asistente; al concluir, reiniciar.
 
