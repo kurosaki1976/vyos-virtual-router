@@ -10,7 +10,7 @@
 
 ## Escenario
 
-En Cuba la adopción de las tecnologías de virtualización van ganando cada vez más adeptos, al mismo tiempo, va siendo común en las redes cubanas la existencia de conexión por fibra óptica; ello presupone el despliegue de avanzadas tecnologías de red, como lo son `routers` y `switch L2/L3`; las cuales en no pocas ocasiones, están subutilizadas.
+En Cuba la adopción de las tecnologías de virtualización van ganando cada vez más adeptos, al mismo tiempo, va siendo común en las redes cubanas la existencia de conexión por fibra óptica -jaque mate al cobre y las tecnologías de conexión `DSL`-; ello presupone el despliegue de avanzadas tecnologías de red, como `router` y `switch L2/L3`; las cuales en no pocas ocasiones, están subutilizadas.
 
 ## Instalación
 
