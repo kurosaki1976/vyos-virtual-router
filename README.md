@@ -20,6 +20,8 @@ A los efectos de esta guía, se utilizará un entorno de virtualización basado 
   - **HDD**: 2 GiB
   - **Arquitectura**: i586 ó amd64
   - **Adaptador de red**: 2 (solo 1, de utilizarse `VLAN` bajo protocolo de etiquetado `IEEE 802.1Q`)
+  
+  > **NOTA**: Si se despliegan `VLAN` bajo protocolo de etiquetado `IEEE 802.1Q`, debe disponerse de un `switch L2`, donde se crearán las mismas `VLAN` que utilizará el `VyOS router`.
 
 2. Software
   - Imagen `ISO` de `VyOS` para la arquitectura seleccionada, disponibles en [VyOS Downloads](https://downloads.vyos.io/).
