@@ -182,3 +182,5 @@ La virtualización puede ser aplicada tanto a servidores como a redes. Además, 
 * [VyOS User Guide](https://wiki.vyos.net/wiki/User_Guide)
 * [VyOS Readthedocs](https://vyos.readthedocs.io/en/latest/)
 * [VyOS KB](https://support.vyos.io/en/kb)
+* [SNMP](https://wiki.vyos.net/wiki/SNMP)
+* [SNMPv3](https://wiki.vyos.net/wiki/SNMPv3)
