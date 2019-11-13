@@ -102,13 +102,13 @@ set system time-zone 'America/Havana'
   set firewall name OutSide rule 2 destination port 'telnet'
   set firewall name OutSide rule 2 protocol 'tcp'
   ```
-    - Sin utilizar protocolo de etiquetado `IEEE 802.1Q`
+   - Sin utilizar protocolo de etiquetado `IEEE 802.1Q`
 
     ```bash
     set interface ethernet eth0 firewall local name OutSide
     ```
 
-    - Utilizando protocolo de etiquetado `IEEE 802.1Q`
+   - Utilizando protocolo de etiquetado `IEEE 802.1Q`
 
     ```bash
     set interface ethernet eth0 vif '100' firewall local name OutSide
