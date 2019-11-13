@@ -138,6 +138,7 @@ set service snmp community public authorization ro
 set service snmp community public network 200.55.143.152/29
 set service snmp location "CU, Nueva Gerona"
 set service snmp contact "postmaster@dominio.cu"
+set service snmp listen-address '200.55.143.153'
 ```
 > **NOTA**: Para habilitar `SNMPv3`, revisar las [referencias](#referencias).
 
