@@ -10,7 +10,7 @@
 
 ## Escenario
 
-En Cuba la adopción de las tecnologías de virtualización van ganando cada vez más adeptos; al mismo tiempo, va siendo común en las redes cubanas la existencia de conexión por fibra óptica -jaque mate al cobre y las tecnologías de conexión `DSL`-; lo que presupone el despliegue de electrónica avanzada de red, como `routers` y `switches L2/L3`; las cuales en no pocas ocasiones, están subutilizadas.
+En Cuba la adopción de las tecnologías de virtualización van ganando cada vez más adeptos; al mismo tiempo, va siendo común en las redes cubanas la existencia de conexión por fibra óptica -jaque mate al cobre y las tecnologías de conexión `DSL`-; lo que presupone el despliegue de electrónica avanzada de red -`routers` y `switches L2/L3`-, las cuales en no pocas ocasiones, están subutilizadas.
 
 A los efectos de esta guía, se utilizará un entorno de virtualización basado en `Proxmox`, donde se creará una máquina virtual ejecutando un `VyOS router` con los siguientes requisitos de `hardware` y `software`.
 
