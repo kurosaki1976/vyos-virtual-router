@@ -131,7 +131,7 @@ set system time-zone 'America/Havana'
   set service ssh port '22'
   ```
 
-  * Habilitar monitoreo de tráfico de red `SNMP (Simple Network Management Protocol)`
+  * Habilitar monitoreo de tráfico de red `SNMPv2 (Simple Network Management Protocol)`
 
   ```bash
   set service snmp community public authorization ro
