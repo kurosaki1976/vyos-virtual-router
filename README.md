@@ -131,6 +131,16 @@ set system time-zone 'America/Havana'
   set service ssh port '22'
   ```
 
+  * Habilitar monitoreo de tráfico de red `SNMP (Simple Network Management Protocol)`
+
+  ```bash
+  set service snmp community public authorization ro
+  set service snmp community public network 200.55.143.152/29
+  set service snmp location "CU, Nueva Gerona"
+  set service snmp contact "postmaster@dominio.cu"
+  ```
+  > **NOTA**: Para habilitar `SNMPv3`, revisar las [referencias](#referencias).
+
 Aplicar la configuración, guardar los cambios para hacerlos permanentes en cada reinicio, y salir del modo de configuración.
 
 ```bash
