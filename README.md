@@ -114,7 +114,7 @@ set system time-zone 'America/Havana'
     set interface ethernet eth0 vif '100' firewall local name OutSide
     ```
 
-    > **NOTA**: La aplicación de esta política de cortafuegos, evita que el `router` sea gestionado a través de la interfaz `WAN`.
+   > **NOTA**: La aplicación de esta política de cortafuegos, evita que el `router` sea gestionado a través de la interfaz `WAN`.
 
   * Definir un usuario distinto al `vyos` por defecto
 
