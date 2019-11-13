@@ -38,7 +38,7 @@ Acceder al modo de configuración a través del comando `configure`.
 
 > **NOTA**: Si se utiliza versiones igual o inferior a la `1.1.8`, es recomendable ejecutar `delete system console device ttyS0`.
 
-* Parámetros globales
+1. Parámetros globales
 
 ```bash
 set system host-name 'router'
@@ -49,9 +49,9 @@ set system time-zone 'America/Havana'
 
 > **NOTA**: Si su `ISP` cuenta con un servidor de hora, ejecutar `set system ntp server 'IP_O_FQDN_SERVIDOR_HORA'`.
 
-* Parámetros de los adaptadores de red
+2. Parámetros de los adaptadores de red
 
-  - Sin utilizar protocolo de etiquetado `IEEE 802.1Q`
+  * Sin utilizar protocolo de etiquetado `IEEE 802.1Q`
 
   ```bash
   set interfaces ethernet eth0 address '192.168.30.2/30'
@@ -60,7 +60,7 @@ set system time-zone 'America/Havana'
   set interfaces ethernet eth1 description 'LAN'
   ```
 
-  - Utilizando protocolo de etiquetado `IEEE 802.1Q`
+  * Utilizando protocolo de etiquetado `IEEE 802.1Q`
 
   ```bash
   set interfaces ethernet eth0 vif '100' address '192.168.30.2/30'
@@ -69,9 +69,9 @@ set system time-zone 'America/Havana'
   set interfaces ethernet eth0 vif '101' description 'LAN'
   ```
 
-* Parámetros de enrutamiento
+3. Parámetros de enrutamiento
 
-  - Para versiones <=1.1.8
+  * Para versiones <=1.1.8
 
   ```bash
   set system gateway-address '192.168.30.1'
@@ -81,15 +81,15 @@ set system time-zone 'America/Havana'
   set protocols static route 0.0.0.0/0 next-hop '192.168.30.1'
   ```
 
-  - Para versiones >1.1.8
+  * Para versiones >1.1.8
 
   ```bash
   set protocols static route 0.0.0.0/0 next-hop '192.168.30.1'
   ```
 
-* Parámetros de seguridad
+4. Parámetros de seguridad
 
-  - Reglas de cortafuegos
+  * Reglas de cortafuegos
 
   ```bash
   set firewall all-ping enable
@@ -118,7 +118,7 @@ set system time-zone 'America/Havana'
 
     > **NOTA**: La aplicación de esta política de cortafuegos, evita que el `router` sea gestionado a través de la interfaz `WAN`.
 
-  - Definir un usuario distinto al `vyos` por defecto
+  * Definir un usuario distinto al `vyos` por defecto
 
   ```bash
   set system login user 'username' full-name 'Descripción del usuario'
@@ -126,7 +126,7 @@ set system time-zone 'America/Havana'
   set system login user 'username' level 'admin'
   ```
 
-  - Permitir acceso a través del protocolo `SSH`
+  * Permitir acceso a través del protocolo `SSH`
 
   ```bash
   set service ssh listen-address '200.55.143.153'
@@ -142,19 +142,19 @@ exit
 
 ## Verificación
 
-* Mostrar los parámetros de configuración establecidos
+1. Mostrar los parámetros de configuración establecidos
 
 ```bash
 show configuration
 ```
 
-* Mostrar los parámetros de los adaptadores de red
+2. Mostrar los parámetros de los adaptadores de red
 
 ```bash
 show interfaces
 ```
 
-* Mostrar el tráfico de red
+3. Mostrar el tráfico de red
 
 ```bash
 monitor interfaces
