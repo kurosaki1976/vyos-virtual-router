@@ -104,15 +104,15 @@ set system time-zone 'America/Havana'
   ```
    - Sin utilizar protocolo de etiquetado `IEEE 802.1Q`
 
-    ```bash
-    set interface ethernet eth0 firewall local name OutSide
-    ```
+   ```bash
+   set interface ethernet eth0 firewall local name OutSide
+   ```
 
    - Utilizando protocolo de etiquetado `IEEE 802.1Q`
 
-    ```bash
-    set interface ethernet eth0 vif '100' firewall local name OutSide
-    ```
+   ```bash
+   set interface ethernet eth0 vif '100' firewall local name OutSide
+   ```
 
    > **NOTA**: La aplicación de esta política de cortafuegos, evita que el `router` sea gestionado a través de la interfaz `WAN`.
 
