@@ -81,7 +81,7 @@ set system time-zone 'America/Havana'
   set protocols static route 0.0.0.0/0 next-hop '192.168.30.1'
   ```
 
-  - Para versiones =>1.1.8
+  - Para versiones >1.1.8
 
   ```bash
   set protocols static route 0.0.0.0/0 next-hop '192.168.30.1'
@@ -118,7 +118,7 @@ set system time-zone 'America/Havana'
 
     > **NOTA**: La aplicación de esta política de cortafuegos, evita que el `router` sea gestionado a través de la interfaz `WAN`.
 
-  - Definir un usuario distinto al por defecto
+  - Definir un usuario distinto al `vyos` por defecto
 
   ```bash
   set system login user 'username' full-name 'Descripción del usuario'
@@ -152,6 +152,12 @@ show configuration
 
 ```bash
 show interfaces
+```
+
+* Mostrar el tráfico de red
+
+```bash
+monitor interfaces
 ```
 
 > **NOTA**: Para listar todos los comandos de configuración ejecutados, utilizar, `show configuration commands`.
