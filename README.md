@@ -76,7 +76,9 @@ set system time-zone 'America/Havana'
   ```bash
   set system gateway-address '192.168.30.1'
   ```
-  ó
+  
+  Tambien puede usarse:
+  
   ```bash
   set protocols static route 0.0.0.0/0 next-hop '192.168.30.1'
   ```
