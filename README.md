@@ -134,11 +134,11 @@ set system time-zone 'America/Havana'
 5. Habilitar monitoreo de tráfico de red `SNMPv2 (Simple Network Management Protocol)`
 
 ```bash
+set service snmp listen-address '200.55.143.153'
 set service snmp community public authorization ro
 set service snmp community public network 200.55.143.152/29
 set service snmp location "CU, Nueva Gerona"
 set service snmp contact "postmaster@dominio.cu"
-set service snmp listen-address '200.55.143.153'
 ```
 > **NOTA**: Para habilitar `SNMPv3`, revisar las [referencias](#referencias).
 
@@ -183,5 +183,4 @@ La virtualización puede ser aplicada tanto a servidores como a redes. Además, 
 * [VyOS User Guide](https://wiki.vyos.net/wiki/User_Guide)
 * [VyOS Readthedocs](https://vyos.readthedocs.io/en/latest/)
 * [VyOS KB](https://support.vyos.io/en/kb)
-* [SNMP](https://wiki.vyos.net/wiki/SNMP)
 * [SNMPv3](https://wiki.vyos.net/wiki/SNMPv3)
