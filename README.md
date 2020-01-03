@@ -165,6 +165,8 @@ show interfaces
 
 3. Mostrar el tráfico de red
 
+ * Para versiones <=1.1.8
+
 ```bash
 monitor interfaces
 ```
