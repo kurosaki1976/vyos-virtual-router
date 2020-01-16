@@ -21,11 +21,11 @@ A los efectos de esta guía, se utilizará un entorno de virtualización basado 
     - **Arquitectura**: i586 ó amd64
     - **Adaptador de red**: 2 (solo 1, de utilizarse `VLAN` bajo protocolo de etiquetado `IEEE 802.1Q`)
 
-    > **NOTA**: Si se despliega `VLAN` bajo protocolo de etiquetado `IEEE 802.1Q`, debe disponerse de un `switch L2`, donde se crearán las mismas `VLANs` que utilizará el `VyOS router`.
-
 2. Software
     - Imagen `ISO` de `VyOS` para la arquitectura seleccionada, disponibles en [VyOS Downloads](https://downloads.vyos.io/).
 
+> **NOTA**: Si se despliega `VLAN` bajo protocolo de etiquetado `IEEE 802.1Q`, debe disponerse de un `switch L2`, donde se crearán las mismas `VLANs` que utilizará el `VyOS router`.
+    
 ## Instalación
 
 El proceso de instalación de `VyOS` es en extremo sencillo, basta con ejecutar el comando `install image` y aceptar (**recomendado**) o modificar las opciones que nos presenta el asistente; al concluir, reiniciar.
