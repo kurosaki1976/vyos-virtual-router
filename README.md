@@ -189,6 +189,22 @@ Acceder al modo de configuración a través del comando `configure`.
 
     ```bash
     add system image https://downloads.vyos.io/rolling/current/amd64/vyos-rolling-latest.iso
+    
+    Checking MD5 checksums of files on the ISO image...OK.
+    Done!
+    What would you like to name this image? [1.3-rolling-202001160217]:
+    OK.  This image will be named: 1.3-rolling-202001160217
+    Installing "1.3-rolling-202001160217" image.
+    Copying new release files...
+    Would you like to save the current configuration
+    directory and config file? (Yes/No) [Yes]:
+    Copying current configuration...
+    Would you like to save the SSH host keys from your
+    current configuration? (Yes/No) [Yes]:
+    Copying SSH keys...
+    Running post-install script...
+    Setting up grub configuration...
+    Done.
     ```
 
 3. Reiniciar el sistema
