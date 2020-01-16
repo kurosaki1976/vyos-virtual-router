@@ -195,7 +195,7 @@ Acceder al modo de configuración a través del comando `configure`.
 
     Contestar afirmativamente a las preguntas que se ofrecen durante el proceso de añadir versión y al concluir, reiniciar el sistema con el comando `reboot`.
 
-    > **NOTA**: Se pude volver a verificar las versiones existentes con el comando `show image system`. También es posible añadir la nueva versión desde una imagen `ISO` previamente descargada y subida al sistema.
+> **NOTA**: Se pude volver a verificar las versiones existentes con el comando `show image system`. También es posible añadir la nueva versión desde una imagen `ISO` previamente descargada y subida al sistema.
 
 ## Conclusiones
 
