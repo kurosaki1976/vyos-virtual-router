@@ -173,6 +173,30 @@ monitor interfaces
 
 > **NOTA**: Para listar todos los comandos de configuración ejecutados, utilizar, `show configuration commands`.
 
+## Actualización
+
+1. Obtener versión en ejecución
+
+```bash
+show system image
+
+The system currently has the following image(s) installed:
+
+   1: 1.2-rolling-201911061649 (default boot) (running image)
+```
+
+2. Añadir nueva versión
+
+```bash
+add system image https://downloads.vyos.io/rolling/current/amd64/vyos-1.3-rolling-202001010217-amd64.iso
+```
+
+3. Reiniciar el sistema
+
+Contestar afirmativamente a las preguntas que se ofrecen duranete el proceso de añadir versión y al concluir reiniciar el sistema con el comando `reboot`.
+
+> **NOTA**: Se pude volver a verificar las versiones existentes con el comando `show image system`. También es posible añadir la nueva versión desde una imagen `ISO` previamente descargada y subida al sistema.
+
 ## Conclusiones
 
 La virtualización representa una de las tecnologías más eficientes para reducir los costos de las infraestructuras informáticas y de telecomunicaciones; jugando un papel esencial en Cuba, atendiendo a las limitaciones que enfrenta el país para la adquisición de equipamiento de última generación.
