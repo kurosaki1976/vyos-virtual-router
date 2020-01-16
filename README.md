@@ -188,7 +188,7 @@ The system currently has the following image(s) installed:
 2. Añadir nueva versión
 
 ```bash
-add system image https://downloads.vyos.io/rolling/current/amd64/vyos-1.3-rolling-202001010217-amd64.iso
+add system image https://downloads.vyos.io/rolling/current/amd64/vyos-rolling-latest.iso
 ```
 
 3. Reiniciar el sistema
