@@ -171,7 +171,7 @@ Acceder al modo de configuración a través del comando `configure`.
     monitor interfaces
     ```
 
-    > **NOTA**: Para listar todos los comandos de configuración ejecutados, utilizar, `show configuration commands`.
+> **NOTA**: Para listar todos los comandos de configuración ejecutados, utilizar, `show configuration commands`.
 
 ## Actualización
 
