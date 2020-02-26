@@ -235,3 +235,4 @@ La virtualización puede ser aplicada tanto a servidores como a redes. Además, 
 * [VyOS Readthedocs](https://vyos.readthedocs.io/en/latest/)
 * [VyOS KB](https://support.vyos.io/en/kb)
 * [SNMPv3](https://wiki.vyos.net/wiki/SNMPv3)
+* [DNS forwarding](https://wiki.vyos.net/wiki/DNS_forwarding)
