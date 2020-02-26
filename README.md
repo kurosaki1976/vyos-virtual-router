@@ -54,7 +54,7 @@ Acceder al modo de configuración a través del comando `configure`.
     ```bash
     set service dns forwarding name-server 'ns1.etecsa.cu'
     set service dns forwarding name-server 'ns2.etecsa.cu'
-    set service dns forwarding listen-on 'eth1'
+    set service dns forwarding listen-on 200.55.143.153
     set service dns forwarding allow-from 200.55.143.152/29
     ```
 
