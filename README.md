@@ -49,7 +49,7 @@ Acceder al modo de configuración a través del comando `configure`.
 
     > **NOTA**: Si su `ISP` cuenta con un servidor de hora, ejecutar `set system ntp server 'IP_O_FQDN_SERVIDOR_NTP'`.
     
-    - Utilizar el `router` como servidor `DNS` para la subred LAN
+    - Utilizar el `router` como servidor `DNS` para la subred `LAN`
     
     ```bash
     set service dns forwarding name-server 'ns1.etecsa.cu'
